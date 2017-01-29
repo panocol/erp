@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {Grid, Navbar, Nav, NavItem, Row, Col, Jumbotron, Button} from 'react-bootstrap';
 
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
   render() {
     return (
         <div>
