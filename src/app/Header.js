@@ -4,17 +4,7 @@ import {Link} from 'react-router';
 
 class Header extends Component {
 
-  constructor() {
-    super();
-
-    this.state = {
-      activeKey: '/'
-    }
-  }
-
-
   handleKey(activeKey) {
-    this.setState({activeKey});
     this.props.router.replace(activeKey);
   }
 
@@ -34,7 +24,7 @@ class Header extends Component {
         <Navbar staticTop>
           <Navbar.Toggle/>
           <Navbar.Collapse>
-            <Nav bsStyle="tabs" activeKey={this.state.activeKey} onSelect={(key) => this.handleKey(key)} justified>
+            <Nav bsStyle="tabs" activeKey={this.props.router.location.pathname} onSelect={(key) => this.handleKey(key)} justified>
               <NavItem eventKey="/">Home</NavItem>
               <NavItem eventKey="/setup">Setup</NavItem>
               <NavItem eventKey="/upload">Upload Documents</NavItem>
