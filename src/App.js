@@ -24,7 +24,7 @@ class App extends Component {
       <div className="App">
         <Header className="App-header" changeTitle={(something) => this.changeTitle(something)} something={this.state.something}/>
 
-
+        {this.props.children}
 
         <Footer/>
       </div>
