@@ -9,6 +9,7 @@ import Setup from './app/Setup';
 import Estimate from './app/Estimate';
 import Confirmation from './app/Confirmation';
 import UploadDocuments from './app/UploadDocuments';
+import SignUp from './app/SignUp';
 
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -26,6 +27,8 @@ ReactDOM.render(
       <Route path="upload" component={UploadDocuments}/>
       <Route path="estimate" component={Estimate}/>
       <Route path="confirmation" component={Confirmation}/>
+      <Route path="signup" component={SignUp}/>
+
 
     </Route>
   </Router>,

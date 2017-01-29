@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header router={this.props.router} className="App-header" changeTitle={(something) => this.changeTitle(something)} something={this.state.something}/>
+        <Header router={this.props.router} changeTitle={(something) => this.changeTitle(something)} something={this.state.something}/>
 
           <Grid><Row><Col>
             <Panel >

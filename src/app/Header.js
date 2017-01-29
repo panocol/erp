@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Navbar, Nav, NavItem, PageHeader, Row, Col} from 'react-bootstrap';
-import {Link} from 'react-router';
+import {Jumbotron, Grid, Navbar, Nav, NavItem, PageHeader, Row, Col} from 'react-bootstrap';
 
 class Header extends Component {
 
@@ -12,15 +11,19 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <PageHeader bsClass="App-header">
+
+
+        <h2 className="App-header">
           <Grid>
             <Row>
-              <Col xs={2}>ERP</Col> <Col xs={2} xsOffset={8}>
+              <Col xs={2}>E<small>nergy</small>R<small>ebate</small>P<small>roducts</small></Col> <Col xs={2} xsOffset={8}>
               <small>Sign in</small>
             </Col>
             </Row>
           </Grid>
-        </PageHeader>
+        </h2>
+
+
         <Navbar staticTop>
           <Navbar.Toggle/>
           <Navbar.Collapse>

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 function Footer(props) {
   return <footer>
-    ERP LLC
+    ERP LLC Footer
   </footer>
 }
 
