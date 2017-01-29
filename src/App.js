@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 import Header from './app/Header'
 import Footer from './app/Footer'
 
+import {Panel, Grid, Row, Col} from 'react-bootstrap';
+
 import './App.css';
 
 class App extends Component {
@@ -24,7 +26,12 @@ class App extends Component {
       <div className="App">
         <Header router={this.props.router} className="App-header" changeTitle={(something) => this.changeTitle(something)} something={this.state.something}/>
 
-        {this.props.children}
+          <Grid><Row><Col>
+            <Panel >
+              {this.props.children}
+            </Panel>
+          </Col></Row></Grid>
+
 
         <Footer/>
       </div>
