@@ -12,7 +12,6 @@ class Header extends Component {
     return (
       <div>
 
-
         <h2 className="App-header">
           <Grid>
             <Row>
@@ -22,7 +21,6 @@ class Header extends Component {
             </Row>
           </Grid>
         </h2>
-
 
         <Navbar staticTop>
           <Navbar.Toggle/>
