@@ -41,8 +41,6 @@ class App extends Component {
               </ul>
             </Panel>
           </Col></Row></Grid>
-
-
         <Footer/>
       </div>
     );

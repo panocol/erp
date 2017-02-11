@@ -11,6 +11,7 @@ import Estimate from './app/Estimate';
 import Confirmation from './app/Confirmation';
 import UploadDocuments from './app/UploadDocuments';
 import SignUp from './app/SignUp';
+import Login from './app/Login';
 
 import store from './store';
 
@@ -27,6 +28,7 @@ ReactDOM.render(<Provider store={store} >
         <Route path="estimate" component={Estimate}/>
         <Route path="confirmation" component={Confirmation}/>
         <Route path="signup" component={SignUp}/>
+        <Route path="login" component={Login}/>
       </Route>
     </Router>
   </Provider>
