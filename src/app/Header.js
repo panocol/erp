@@ -7,7 +7,6 @@ class Header extends Component {
     this.props.router.replace(activeKey);
   }
 
-
   render() {
     return (
       <div>
